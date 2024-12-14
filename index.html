@@ -1,0 +1,166 @@
+<!-- index.html -->
+<!-- Potatoful Games Website -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Hi! I am a solo indie game developer located in Canada. Explore this website to discover my games and projects! 🥔">
+        <meta name="author" content="Potatoful Games">
+        <meta name="creator" content="Potatoful Games">
+
+        <title>Potatoful Games</title>
+
+        <link rel="icon" type="image/png" href="/images/PascalThePotato-24x22.png">
+        <link rel="stylesheet" type="text/css" href="/styles.css">
+        <script defer src="/index.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div class="NavBarLogo" onclick="window.location.href = '/'">
+                <img src="/images/PascalThePotato-24x22.png" alt="Potatoful Games Logo">
+                <a>Potatoful Games</a>
+            </div>
+
+            <div style="flex: 1;"></div>
+
+            <a href="/" title="Home">Home</a>
+            
+            <div style="margin: auto;">
+                <a onclick="toggleGamesNavMenu()" onmouseenter="toggleGamesNavMenu(true)" onmouseleave="toggleGamesNavMenu(false)" title="My Games">My Games &#x25BE;</a>
+                <div id="GamesNavMenu" class="NavBarDropDown" onmouseenter="toggleGamesNavMenu(true)" onmouseleave="toggleGamesNavMenu(false)">
+                    <a href="/my-games/hoops-ahead-basketball-manager" title="Hoops Ahead: Basketball Manager">Hoops Ahead</a>
+                    <a href="/my-games/scale-searcher" title="Scale Searcher">Scale Searcher</a>
+                </div>
+            </div>
+            
+            <div style="margin: auto;">
+                <a onclick="toggleLinksNavMenu()" onmouseenter="toggleLinksNavMenu(true)" onmouseleave="toggleLinksNavMenu(false)" title="Links">Links &#x25BE;</a>
+                <div id="LinksNavMenu" class="NavBarDropDown" onmouseenter="toggleLinksNavMenu(true)" onmouseleave="toggleLinksNavMenu(false)">
+                    <a href="/" title="Potatoful Games Steam" target="_blank">Steam</a>
+                    <a href="https://potatofulgames.itch.io/" title="Potatoful Games Itch.io" target="_blank">Itch.io</a>
+                    <a href="https://www.youtube.com/@PotatofulGames" title="Potatoful Games YouTube" target="_blank">YouTube</a>
+                </div>
+            </div>
+            
+            <a href="/about-me" title="About Me">About Me</a>
+
+            <a class="NavBarMenuButton" onclick="toggleMobileNavMenu()" title="Navigation Menu Button">≣</a>
+        </nav>
+
+        <div class="MobileNavMenu">
+            <a class="NavBarMenuButton" onclick="toggleMobileNavMenu()" title="Navigation Menu Button" style="position: fixed; text-align: right; top: -0.975em; right: -0.9em; font-size: 1.85em;">≣</a>
+
+            <a href="/" title="Home">Home</a>
+            
+            <div style="margin: auto;">
+                <a onclick="toggleMobileGamesNavMenu()" title="My Games">My Games &#x25BE;</a>
+                <div id="MobileGamesNavMenu" class="NavBarDropDown">
+                    <a href="/my-games/hoops-ahead-basketball-manager" title="Hoops Ahead: Basketball Manager">Hoops Ahead</a>
+                    <a href="/my-games/scale-searcher" title="Scale Searcher">Scale Searcher</a>
+                </div>
+            </div>
+            
+            <div style="margin: auto;">
+                <a onclick="toggleMobileLinksNavMenu()" title="Links">Links &#x25BE;</a>
+                <div id="MobileLinksNavMenu" class="NavBarDropDown">
+                    <a href="/" title="Potatoful Games Steam" target="_blank">Steam</a>
+                    <a href="https://potatofulgames.itch.io/" title="Potatoful Games Itch.io" target="_blank">Itch.io</a>
+                    <a href="https://www.youtube.com/@PotatofulGames" title="Potatoful Games YouTube" target="_blank">YouTube</a>
+                </div>
+            </div>
+            
+            <a href="/about-me" title="About Me">About Me</a>
+        </div>
+
+        <section class="NightSkyBanner">
+            <h1>Potatoful<br>Games</h1>
+            <article>
+                Hi! I am a solo indie game developer located in Canada. Explore this website to discover my games and projects!
+                If you want to contact me, send an email to <a href="mailto:contact@potatofulgames.com" title="Potatoful Games Contact Email">contact@potatofulgames.com</a>
+            </article>
+        </section>
+
+        <section class="MyGames">
+            <h2>My Games</h2>
+            <hr style="max-width: 15em; width: 35%; margin-top: -0.5em; margin-bottom: 2em;">
+            
+            <div class="MyGamesRow">
+                <div class="MyGamesRowItem" title="Hoops Ahead: Basketball Manager" onclick="window.location.href = '/my-games/hoops-ahead-basketball-manager'">
+                    <div title="Hoops Ahead: Basketball Manager" style="background-image: url('/images/hoops-ahead/HoopsAheadCoverImage.png');"></div>
+                    <h3>Hoops Ahead: Basketball Manager</h3>
+                    <p>Manage and lead your team to a championship!</p>
+                </div>
+
+                <div class="MyGamesRowItem" title="Scale Searcher" onclick="window.location.href = '/my-games/scale-searcher'">
+                    <div title="Scale Searcher" style="background-image: url('/images/scale-searcher/ScaleSearcherCoverImage.png');"></div>
+                    <h3>Scale Searcher</h3>
+                    <p>Made For The GMTK Game Jam 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="News">
+            <h2>News & Announcements</h2>
+            <hr style="max-width: 30em; width: 60%; margin-top: -0.5em; margin-bottom: 2em;">
+
+            <div class="MyGamesRow">
+                <div class="MyGamesRowItem" title="New Potatoful Games Website!" onclick="window.location.href = '/'">
+                    <div title="New Potatoful Games Website!" style="background-image: url('/images/PotatofulGamesNightSkyBanner.png');"></div>
+                    <h3>New Potatoful Games Website!</h3>
+                    <p>New Website - December 14, 2024</p>
+                </div>
+                
+                <div class="MyGamesRowItem" title="Scale Searcher - GMTK Game Jam 2024" onclick="window.open('https://potatofulgames.itch.io/scale-searcher', '_blank').focus()">
+                    <div title="Scale Searcher - GMTK Game Jam 2024" style="background-image: url('/images/scale-searcher/ScaleSearcher-2024_08_19.png');"></div>
+                    <h3>Scale Searcher - GMTK Game Jam 2024</h3>
+                    <p>Link To Itch.io Page - August 19, 2024</p>
+                </div>
+            </div>
+
+            <div class="MyGamesRow">
+                <div class="MyGamesRowItem" title="Team Management Update (v0.3)" onclick="window.open('https://potatofulgames.itch.io/hoops-ahead/devlog/660670/team-management-update-v03', '_blank').focus()">
+                    <div title="Team Management Update (v0.3)" style="background-image: url('/images/hoops-ahead/HoopsAhead-2024_01_04.png');"></div>
+                    <h3>Team Management Update (v0.3)</h3>
+                    <p>Link To Itch.io Page - January 4, 2024</p>
+                </div>
+
+                <div class="MyGamesRowItem" title="Player Progression Update (v0.2)" onclick="window.open('https://potatofulgames.itch.io/hoops-ahead/devlog/653650/player-progression-update-v02', '_blank').focus()">
+                    <div title="Player Progression Update (v0.2)" style="background-image: url('/images/hoops-ahead/HoopsAhead-2023_12_20.png'); background-position-y: 19.5%;"></div>
+                    <h3>Player Progression Update (v0.2)</h3>
+                    <p>Link To Itch.io Page - December 20, 2023</p>
+                </div>
+            </div>
+
+            <div class="MyGamesRow">
+                <div class="MyGamesRowItem" title="Hoops Ahead v0.1 Release: Itch.io" onclick="window.open('https://potatofulgames.itch.io/hoops-ahead/devlog/652056/first-version-released', '_blank').focus()">
+                    <div title="Hoops Ahead v0.1 Release: Itch.io" style="background-image: url('/images/hoops-ahead/HoopsAhead-2023_12_17.png'); background-position-x: left;"></div>
+                    <h3>Hoops Ahead v0.1 Release: Itch.io</h3>
+                    <p>Link To Itch.io Page - December 17, 2023</p>
+                </div>
+
+                <div class="MyGamesRowItem" title="First Look: Hoops Ahead" onclick="window.open('https://youtube.com/shorts/vwm-6V7wFDI?si=1PsX17NJnE57lWDK', '_blank').focus()">
+                    <div title="First Look: Hoops Ahead" style="background-image: url('/images/hoops-ahead/HoopsAhead-2023_12_14.png'); background-position-y: 14.5%;"></div>
+                    <h3>First Look: Hoops Ahead</h3>
+                    <p>YouTube Video - December 14, 2023</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div style="padding-left: 4em;">
+                <h3>Potatoful Games</h3>
+                <p>Contact Me: <a href="mailto:contact@potatofulgames.com" title="Potatoful Games Contact Email">contact@potatofulgames.com</a></p>
+                <a href="/terms-of-service" title="Terms Of Service">Terms Of Service</a>
+                <a href="/privacy-policy" title="Privacy Policy">Privacy Policy</a>
+            </div>
+
+            <div>
+                <img src="/images/PascalThePotato_LookingUp-24x22.png" alt="Potatoful Games Logo" onclick="window.location.href = '/'">
+            </div>
+        </footer>
+    </body>
+</html>

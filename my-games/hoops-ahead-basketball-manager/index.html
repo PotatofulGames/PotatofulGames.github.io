@@ -1,0 +1,105 @@
+<!-- hoops-ahead-basketball-manager/index.html -->
+<!-- Potatoful Games Website -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Hoops Ahead: Basketball Manager. A new basketball league has been founded! Use your management skills to lead your team to a championship. 🏀">
+        <meta name="author" content="Potatoful Games">
+        <meta name="creator" content="Potatoful Games">
+
+        <title>Hoops Ahead - Potatoful Games</title>
+
+        <link rel="icon" type="image/png" href="/images/PascalThePotato-24x22.png">
+        <link rel="stylesheet" type="text/css" href="/styles.css">
+        <script defer src="/index.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div class="NavBarLogo" onclick="window.location.href = '/'">
+                <img src="/images/PascalThePotato-24x22.png" alt="Potatoful Games Logo">
+                <a>Potatoful Games</a>
+            </div>
+
+            <div style="flex: 1;"></div>
+
+            <a href="/" title="Home">Home</a>
+            
+            <div style="margin: auto;">
+                <a onclick="toggleGamesNavMenu()" onmouseenter="toggleGamesNavMenu(true)" onmouseleave="toggleGamesNavMenu(false)" title="My Games">My Games &#x25BE;</a>
+                <div id="GamesNavMenu" class="NavBarDropDown" onmouseenter="toggleGamesNavMenu(true)" onmouseleave="toggleGamesNavMenu(false)">
+                    <a href="/my-games/hoops-ahead-basketball-manager" title="Hoops Ahead: Basketball Manager">Hoops Ahead</a>
+                    <a href="/my-games/scale-searcher" title="Scale Searcher">Scale Searcher</a>
+                </div>
+            </div>
+            
+            <div style="margin: auto;">
+                <a onclick="toggleLinksNavMenu()" onmouseenter="toggleLinksNavMenu(true)" onmouseleave="toggleLinksNavMenu(false)" title="Links">Links &#x25BE;</a>
+                <div id="LinksNavMenu" class="NavBarDropDown" onmouseenter="toggleLinksNavMenu(true)" onmouseleave="toggleLinksNavMenu(false)">
+                    <a href="/" title="Potatoful Games Steam" target="_blank">Steam</a>
+                    <a href="https://potatofulgames.itch.io/" title="Potatoful Games Itch.io" target="_blank">Itch.io</a>
+                    <a href="https://www.youtube.com/@PotatofulGames" title="Potatoful Games YouTube" target="_blank">YouTube</a>
+                </div>
+            </div>
+            
+            <a href="/about-me" title="About Me">About Me</a>
+
+            <a class="NavBarMenuButton" onclick="toggleMobileNavMenu()" title="Navigation Menu Button">≣</a>
+        </nav>
+
+        <div class="MobileNavMenu">
+            <a class="NavBarMenuButton" onclick="toggleMobileNavMenu()" title="Navigation Menu Button" style="position: fixed; text-align: right; top: -0.975em; right: -0.9em; font-size: 1.85em;">≣</a>
+
+            <a href="/" title="Home">Home</a>
+            
+            <div style="margin: auto;">
+                <a onclick="toggleMobileGamesNavMenu()" title="My Games">My Games &#x25BE;</a>
+                <div id="MobileGamesNavMenu" class="NavBarDropDown">
+                    <a href="/my-games/hoops-ahead-basketball-manager" title="Hoops Ahead: Basketball Manager">Hoops Ahead</a>
+                    <a href="/my-games/scale-searcher" title="Scale Searcher">Scale Searcher</a>
+                </div>
+            </div>
+            
+            <div style="margin: auto;">
+                <a onclick="toggleMobileLinksNavMenu()" title="Links">Links &#x25BE;</a>
+                <div id="MobileLinksNavMenu" class="NavBarDropDown">
+                    <a href="/" title="Potatoful Games Steam" target="_blank">Steam</a>
+                    <a href="https://potatofulgames.itch.io/" title="Potatoful Games Itch.io" target="_blank">Itch.io</a>
+                    <a href="https://www.youtube.com/@PotatofulGames" title="Potatoful Games YouTube" target="_blank">YouTube</a>
+                </div>
+            </div>
+            
+            <a href="/about-me" title="About Me">About Me</a>
+        </div>
+
+        <section id="HoopsAhead" class="NightSkyBanner">
+            <h1>Hoops Ahead:<br>Basketball Manager</h1>
+            <article>
+                A new basketball league has been founded! Use your management skills to lead your team to a championship.
+            </article>
+
+            <section class="GameEmbed">
+                <iframe id="HoopsAheadItchIoEmbed" frameborder="0" src="https://itch.io/embed/2405053?linkback=true" width="552" height="167" style="overflow: auto;">
+                    <a href="https://potatofulgames.itch.io/hoops-ahead">Hoops Ahead: Basketball Manager by Potatoful Games</a>
+                </iframe>
+            </section>
+        </section>
+
+        <footer>
+            <div style="padding-left: 4em;">
+                <h3>Potatoful Games</h3>
+                <p>Contact Me: <a href="mailto:contact@potatofulgames.com" title="Potatoful Games Contact Email">contact@potatofulgames.com</a></p>
+                <a href="/terms-of-service" title="Terms Of Service">Terms Of Service</a>
+                <a href="/privacy-policy" title="Privacy Policy">Privacy Policy</a>
+            </div>
+
+            <div>
+                <img src="/images/PascalThePotato_LookingUp-24x22.png" alt="Potatoful Games Logo" onclick="window.location.href = '/'">
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,499 @@
+/* styles.css */
+/* Potatoful Games Website */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: rgb(29, 0, 97);
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 80, 185, 0.6);
+    backdrop-filter: blur(20px);
+    z-index: 1;
+}
+
+nav a, .MobileNavMenu a {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    user-select: none;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.65);
+    filter: blur(0.4px);
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: 20em;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(43, 39, 117, 0.8);
+    backdrop-filter: blur(20px);
+    z-index: 1;
+}
+
+footer div {
+    flex: 1;
+    padding: 3.5em;
+}
+
+footer div:last-child {
+    flex: 0;
+    text-align: right;
+    margin-right: 2em;
+}
+
+footer h3 {
+    color: white;
+    font-size: 1.75em;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+footer p {
+    color: white;
+    font-size: 1em;
+}
+
+footer p a {
+    color: rgba(0, 110, 255);
+    font-weight: 550;
+    display: inline;
+}
+
+footer a {
+    display: block;
+    color: white;
+    margin-top: 1em;
+    width: fit-content;
+}
+
+footer img {
+    image-rendering: pixelated;
+    text-align: right;
+    width: 144px;
+}
+
+footer img:hover {
+    cursor: pointer;
+}
+
+.NavBarLogo {
+    margin: auto;
+    padding-left: 2em;
+}
+
+.NavBarLogo:hover {
+    cursor: pointer;
+}
+
+.NavBarLogo img {
+    width: 72px;
+    image-rendering: pixelated;
+    vertical-align: middle;
+}
+
+.NavBarLogo a {
+    display: inline;
+    font-size: 1.75em;
+    padding-left: 1em;
+}
+
+.NavBarLogo a:hover {
+    color: white;
+    filter: none;
+}
+
+.NavBarDropDown {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 72, 167, 0.95);
+    backdrop-filter: blur(20px);
+    margin-top: 2.2em;
+}
+
+#GamesNavMenu {
+    width: 13.7em;
+}
+
+#LinksNavMenu {
+    width: 10.15em;
+}
+
+.NavBarDropDown a {
+    padding: 0.8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.NavBarMenuButton {
+    display: none;
+    font-size: 1.85em;
+    padding: 0.6em;
+}
+
+.MobileNavMenu {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(26, 30, 41, 0.8);
+    backdrop-filter: blur(8px);
+    text-align: center;
+    padding-top: 4em;
+    z-index: 2;
+}
+
+.MobileNavMenu a {
+    display: block;
+    position: relative;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+.MobileNavMenu div div {
+    position: relative;
+    margin-top: 0em;
+}
+
+#MobileGamesNavMenu, #MobileLinksNavMenu {
+    background-color: unset;
+    backdrop-filter: none;
+}
+
+#MobileGamesNavMenu a, #MobileLinksNavMenu a {
+    padding-top: 0em;
+}
+
+.NightSkyBanner {
+    background-image: linear-gradient(to right, black, transparent), url("/images/PotatofulGamesNightSkyBanner.png");
+    background-position-x: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    width: 100%;
+    height: calc(100vw * 0.5625);
+    --height: calc(100vw * 0.5625);
+    min-height: 600px;
+}
+
+.NightSkyBanner h1 {
+    font-size: 5em;
+    color: white;
+    margin: 0;
+    margin-left: 1.5em;
+    padding-top: calc(var(--height) * 0.35);
+    text-align: left;
+}
+
+.NightSkyBanner article {
+    font-size: 1.75em;
+    color: white;
+    margin-top: 1.5em;
+    margin-left: 4.5em;
+    max-width: calc(var(--height) * 0.8);
+}
+
+.NightSkyBanner a {
+    color: rgba(0, 110, 255);
+    font-weight: 550;
+}
+
+#HoopsAhead {
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.6)), url("/images/hoops-ahead/HoopsAheadCoverImage.png");
+    background-position-y: bottom;
+    background-position-x: center;
+    padding-bottom: 5em;
+}
+
+#ScaleSearcher {
+    background-image: linear-gradient(to right, rgb(5, 0, 20), rgba(5, 0, 20, 0.6)), url("/images/scale-searcher/ScaleSearcherCoverImage.png");
+    background-position-y: center;
+    background-position-x: center;
+    padding-bottom: 5em;
+}
+
+#AboutMe {
+    padding-bottom: 3.75em;
+    height: calc(100vw * 0.55);
+    --height: calc(100vw * 0.55);
+}
+
+#TermsOfService {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.75)), url("/images/PotatofulGamesNightSkyBanner.png");
+    height: fit-content;
+    margin-top: -5em;
+    padding-bottom: 5em;
+}
+
+#TermsOfService h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+#TermsOfService article {
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+#TermsOfService article a br {
+    display: none;
+}
+
+.MyGames, .News {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-image: linear-gradient(rgba(11, 2, 27, 0.9), rgba(21, 0, 71, 0.9)), url("/images/PotatofulGamesBlueBanner.png");
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+}
+
+.MyGames h2, .News h2 {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1.25em;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+}
+
+.MyGamesRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.MyGamesRowItem {
+    flex: 1;
+    text-align: center;
+    margin: 3em;
+    transition: 0.5s ease;
+}
+
+.MyGamesRowItem:hover {
+    cursor: pointer;
+    scale: 1.025;
+    transition: 0.5s ease;
+}
+
+.MyGamesRowItem div {
+    background-color: gray;
+    width: 32.5em;
+    max-width: 80vw;
+    height: 25em;
+    margin: auto;
+    image-rendering: pixelated;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-width: 0.25em;
+    border-style: solid;
+    border-color: white;
+}
+
+.MyGamesRowItem h3 {
+    color: white;
+    font-size: 1.75em;
+}
+
+.MyGamesRowItem p {
+    color: white;
+    font-size: 1.2em;
+}
+
+.GameEmbed {
+    text-align: left;
+    margin-left: 8em;
+    margin-top: 6em;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .NightSkyBanner article {
+        font-size: 1.4em;
+        margin-left: 5.5em;
+        max-width: calc(var(--height));
+    }
+
+    
+    #HoopsAhead {
+        padding-bottom: 10em;
+    }
+
+    #TermsOfService {
+        margin-top: 0em;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    nav a {
+        font-size: 1.1em;
+    }
+
+    #HoopsAhead h1, #ScaleSearcher h1 {
+        font-size: 4em;
+        margin-left: 1.9em;
+    }
+
+    .NavBarDropDown {
+        margin-top: 1.65em;
+    }
+
+    #GamesNavMenu {
+        width: 10.1em;
+    }
+    
+    #LinksNavMenu {
+        width: 7.5em;
+    }
+
+    .NavBarLogo {
+        padding: 0.9em;
+        padding-left: 1.5em;
+    }
+
+    .NavBarLogo a {
+        font-size: 1.3em;
+    }
+
+    .NavBarLogo img {
+        width: 48px;
+    }
+}
+
+@media only screen and (max-width: 845px) {
+    nav a {
+        display: none;
+    }
+
+    .NavBarMenuButton {
+        display: block;
+    }
+
+    .NightSkyBanner h1, #HoopsAhead h1, #ScaleSearcher h1 {
+        padding-top: 2em;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .GameEmbed {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #HoopsAhead {
+        background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.6)), url("/images/hoops-ahead/HoopsAheadCoverImage.png");
+    }
+
+    #ScaleSearcher {
+        background-image: linear-gradient(to bottom, rgb(5, 0, 20), rgba(5, 0, 20, 0.6)), url("/images/scale-searcher/ScaleSearcherCoverImage.png");
+    }
+
+    #HoopsAhead h1, #ScaleSearcher h1 {
+        font-size: 3.5em;
+        padding-top: 3em;
+        margin-left: 0.8em;
+        margin-right: 0.8em;
+    }
+
+    .NightSkyBanner article {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 75%;
+    }
+
+    #TermsOfService article a br {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 635px) {
+    footer {
+        flex-wrap: wrap;
+    }
+
+    footer div:last-child {
+        flex: 1;
+        text-align: center;
+        margin-right: 0em;
+    }
+
+    .GameEmbed {
+        margin-top: 3.5em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .NightSkyBanner h1 {
+        padding-top: 3em;
+        font-size: 3.75em;
+    }
+
+    #HoopsAhead h1, #ScaleSearcher h1 {
+        font-size: 3em;
+    }
+
+    .NightSkyBanner article {
+        margin-top: 2.5em;
+        font-size: 1.2em;
+        max-width: 80%;
+    }
+
+    .MyGames h2, .News h2 {
+        font-size: 2em;
+    }
+
+    .MyGamesRowItem {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .MyGamesRowItem div {
+        height: 20em;
+    }
+
+    .MyGamesRowItem h3 {
+        font-size: 1.45em;
+    }
+
+    .MyGamesRowItem p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 395px) {
+    .NavBarLogo a {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .MyGamesRowItem div {
+        height: 17.5em;
+    }
+}
