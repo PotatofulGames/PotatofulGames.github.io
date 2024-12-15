@@ -252,7 +252,7 @@ footer img:hover {
 
 #TermsOfService h1 {
     text-align: center;
-    margin: 0;
+    margin: auto;
     margin-bottom: 1em;
     max-width: 80%;
 }
