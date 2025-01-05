@@ -337,6 +337,10 @@ footer img:hover {
     margin-top: 6em;
 }
 
+#HoopsAheadGameEmbed {
+    margin-top: 2.75em;
+}
+
 
 @media only screen and (max-width: 1400px) {
     .NightSkyBanner article {
@@ -451,6 +455,14 @@ footer img:hover {
 
     .GameEmbed {
         margin-top: 3.5em;
+    }
+
+    #HoopsAheadGameEmbed {
+        margin-top: 1.5em;
+    }
+
+    #HoopsAhead article {
+        margin-top: 1.25em;
     }
 }
 

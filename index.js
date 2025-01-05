@@ -78,7 +78,7 @@ function toggleMobileLinksNavMenu(toggleOn = !mobileLinksNavMenuVisible) {
 }
 
 
-let gameEmbed = document.getElementById("HoopsAheadItchIoEmbed");
+let gameEmbed = document.getElementById("HoopsAheadSteamEmbed");
 
 if (gameEmbed == null) {
     gameEmbed = document.getElementById("ScaleSearcherItchIoEmbed");
